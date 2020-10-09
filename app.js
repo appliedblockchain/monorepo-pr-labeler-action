@@ -50,7 +50,7 @@ async function prMonorepoRepoLabeler() {
     if (repo) {
       console.log(`labeling repo: ${repo}`)
 
-      const repoLabel = `Repo - ${repo}`
+      const repoLabel = repo
 
       helpers.addLabel(
         octokit,
